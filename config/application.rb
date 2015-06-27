@@ -18,7 +18,9 @@ module Haoshu
 
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
-    # config.i18n.default_locale = :de
+    config.i18n.default_locale = :zh
+
+    # config.autoload_paths << Rails.root.join('lib') # 貌似本句在Rails4.2中无用，4.1中OK。可能是rails的bug。目前我是用在/initializers下加入require.rb的替代方案实现的。
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true

@@ -1,0 +1,8 @@
+= form_for @book, form_options do |f|
+  label for='book_name'
+    = t('book.name')
+
+  = f.text_field :name
+
+  button type='submit' class='ui-shadow ui-btn ui-corner-all'
+    | 提 交

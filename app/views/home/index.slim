@@ -1,1 +1,19 @@
-| 《幸福的方法》
+/= title t('fee.record')
+/
+/= content_for :header do
+/  = faq_header(t('fee.record'), 'data-placement' => 'bottom')
+/
+/  a< href=recharges_path class='btn btn-sm btn-success'
+/    = t('recharge.management')
+/
+/= content_for :grid do
+/table *css_table
+
+a href=new_book_path class='ui-btn ui-corner-all ui-btn-inline'
+  = t('book.new')
+
+ul data-role='listview' data-inset='true' data-input='#filter-for-listview'
+  - @books.each_with_index do |book, i|
+    li
+      a href="#"
+        = book.name + book.authors.map(&:name).to_split

@@ -1,3 +1,7 @@
+# 好书网
+好书网是一个分享好书的网站。
+
+
 == README
 
 This README would normally document whatever steps are necessary to get the

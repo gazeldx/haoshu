@@ -1,0 +1,13 @@
+# Sample localization file for Chinese. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+zh:
+  book:
+    name: 书名
+    price: 定价
+    author: 作者
+    new: 推荐一本好书
+    created: 已成功推荐一本好书！
+
+  author:
+    name: 作者
+    remark: 简介
