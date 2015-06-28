@@ -5,6 +5,7 @@ zh:
     name: 书名
     price: 定价
     author: 作者
+    summary: 简介
     new: 推荐一本好书
     created: 已成功推荐一本好书！
 

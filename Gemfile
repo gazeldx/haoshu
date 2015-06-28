@@ -1,5 +1,8 @@
 source 'https://ruby.taobao.org'
 
+gem 'puma' # Web服务器
+gem 'slim' # 用于简化html代码
+gem 'will_paginate' # 用于分页
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
@@ -23,21 +26,9 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
-gem 'puma'
-gem 'pundit'
-gem 'slim'
-gem 'will_paginate'
-gem 'carrierwave'
-gem 'settingslogic'
-
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
-
-# Use Unicorn as the app server
-# gem 'unicorn'
-
-# Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
+# gem 'pundit' # 用于鉴权
+# gem 'carrierwave' # 用于上传文件
+# gem 'settingslogic' # 用于设置配置文件
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
