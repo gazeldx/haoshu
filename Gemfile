@@ -3,6 +3,7 @@ source 'https://ruby.taobao.org'
 gem 'puma' # Web服务器
 gem 'slim' # 用于简化html代码
 gem 'will_paginate' # 用于分页
+gem 'therubyracer' # TODO: Replace it by node.js http://stackoverflow.com/questions/6282307/execjs-and-could-not-find-a-javascript-runtime
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
